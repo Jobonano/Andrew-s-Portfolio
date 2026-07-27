@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Privacy Policy — Andrew Joshua Adole</title>
+<meta name="description" content="Privacy policy for andrew-s-group.com and Andrew Joshua Adole's portfolio, AI chat assistant, and demo automations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-950:#05100A; --bg-900:#0B1912; --bg-800:#10201A; --bg-750:#15271F;
+  --line: rgba(76,232,140,0.14); --line-strong: rgba(76,232,140,0.28);
+  --accent:#3BDE7D; --accent-2:#8FF6B4; --accent-deep:#146B3B;
+  --text-hi:#EAF6EF; --text-lo:#93AA9E; --text-dim:#5E7669;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+body{ margin:0; background:var(--bg-950); color:var(--text-hi); font-family:'Inter', sans-serif; line-height:1.65; -webkit-font-smoothing:antialiased; }
+h1,h2,h3{ font-family:'Sora', sans-serif; margin:0; letter-spacing:-0.01em; color:var(--text-hi); }
+.mono{ font-family:'JetBrains Mono', monospace; }
+a{ color:var(--accent-2); text-decoration:underline; text-underline-offset:2px; }
+a:hover{ color:var(--accent); }
+.wrap{ max-width:840px; margin:0 auto; padding:0 32px; }
+
+header.site-nav{ position:sticky; top:0; z-index:100; background:rgba(5,16,10,0.85); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+.nav-inner{ max-width:1180px; margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.logo{ display:flex; align-items:center; gap:11px; text-decoration:none; font-family:'Sora', sans-serif; font-weight:700; font-size:1.05rem; color:var(--text-hi); }
+.logo-mark{ width:34px; height:34px; border-radius:9px; background:linear-gradient(150deg, var(--accent), var(--accent-deep)); display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono', monospace; font-weight:600; font-size:0.85rem; color:#052912; flex-shrink:0; }
+.back-link{ font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-lo); text-decoration:none; display:flex; align-items:center; gap:8px; }
+.back-link:hover{ color:var(--accent); }
+.back-link svg{ width:14px; height:14px; }
+
+.ambient{ position:relative; background: radial-gradient(ellipse 900px 500px at 15% -5%, rgba(59,222,125,0.12), transparent 60%); }
+.hero{ padding:64px 0 40px; border-bottom:1px solid var(--line); }
+.eyebrow{ font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:10px; }
+.eyebrow::before{ content:""; width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px 2px rgba(59,222,125,0.55); display:inline-block; }
+.hero h1{ font-size:clamp(1.9rem, 4vw, 2.7rem); font-weight:700; margin-top:16px; }
+.hero .updated{ margin-top:14px; font-family:'JetBrains Mono', monospace; font-size:0.8rem; color:var(--text-lo); }
+.hero p.lead{ margin-top:16px; color:var(--text-lo); font-size:0.98rem; max-width:60ch; }
+
+.legal{ padding:56px 0 100px; }
+.legal section{ margin-bottom:44px; }
+.legal h2{ font-size:1.25rem; font-weight:700; display:flex; align-items:baseline; gap:12px; }
+.legal h2 .num{ font-family:'JetBrains Mono', monospace; font-size:0.85rem; color:var(--accent); font-weight:600; }
+.legal p{ margin-top:14px; color:var(--text-lo); font-size:0.97rem; }
+.legal ul{ margin-top:14px; padding-left:20px; color:var(--text-lo); font-size:0.97rem; }
+.legal li{ margin-bottom:8px; }
+.legal strong{ color:var(--text-hi); font-weight:600; }
+
+.toc{ background:var(--bg-900); border:1px solid var(--line-strong); border-radius:14px; padding:26px 28px; margin:40px 0 0; }
+.toc h3{ font-size:0.9rem; font-family:'JetBrains Mono', monospace; color:var(--text-lo); text-transform:uppercase; letter-spacing:0.08em; font-weight:600; margin-bottom:14px; }
+.toc ol{ margin:0; padding-left:20px; }
+.toc li{ margin-bottom:8px; font-size:0.92rem; }
+.toc a{ color:var(--text-hi); text-decoration:none; }
+.toc a:hover{ color:var(--accent); }
+
+.data-table{ margin-top:18px; border:1px solid var(--line-strong); border-radius:12px; overflow:hidden; }
+.data-row{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; border-bottom:1px solid var(--line); }
+.data-row:last-child{ border-bottom:none; }
+.data-row.head{ background:var(--bg-800); }
+.data-row.head span{ font-family:'JetBrains Mono', monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); }
+.data-row span{ padding:13px 16px; font-size:0.86rem; color:var(--text-lo); }
+.data-row span:first-child{ color:var(--text-hi); font-weight:500; }
+
+.cert-chip{ display:inline-flex; align-items:center; gap:8px; background:var(--bg-900); border:1px solid var(--line); border-radius:10px; padding:8px 14px; font-size:0.82rem; margin:4px 6px 4px 0; font-family:'JetBrains Mono', monospace; color:var(--accent-2); }
+
+.contact-box{ background:var(--bg-900); border:1px solid var(--line-strong); border-radius:14px; padding:28px; margin-top:12px; }
+.contact-box a{ font-family:'JetBrains Mono', monospace; }
+
+footer{ border-top:1px solid var(--line); padding:36px 0 28px; }
+.footer-inner{ max-width:1180px; margin:0 auto; padding:0 32px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-family:'JetBrains Mono', monospace; font-size:0.78rem; color:var(--text-dim); }
+.footer-inner a{ color:var(--text-dim); text-decoration:none; }
+.footer-inner a:hover{ color:var(--accent); }
+
+@media (max-width:700px){
+  .wrap{ padding:0 22px; }
+  .nav-inner{ padding:14px 20px; }
+  .hero{ padding:48px 0 32px; }
+  .legal{ padding:44px 0 72px; }
+  .data-row{ grid-template-columns:1fr; }
+  .data-row span{ padding:10px 16px; }
+  .data-row span:first-child{ padding-bottom:0; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark">AJ</span> Andrew Joshua</a>
+    <a href="index.html#contact" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to site
+    </a>
+  </div>
+</header>
+
+<div class="ambient">
+  <div class="wrap hero">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 26, 2026</p>
+    <p class="lead">This policy explains what information is collected when you browse this Site, message the AI chat assistant, use a linked Telegram bot, or reach out through the contact form — and how that information is used.</p>
+  </div>
+</div>
+
+<div class="wrap legal">
+
+  <div class="toc">
+    <h3>On this page</h3>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#data-collected">What data is collected</a></li>
+      <li><a href="#how-used">How data is used</a></li>
+      <li><a href="#third-party-services">Third-party services &amp; processors</a></li>
+      <li><a href="#cookies">Cookies &amp; local storage</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#sharing">Data sharing &amp; disclosure</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>This Privacy Policy applies to <strong>andrew.andrew-s-group.com</strong> and any subdomains operated by Andrew Joshua Adole as a personal portfolio (the "Site"). It does not cover <a href="https://www.andrew-s-group.com" target="_blank" rel="noopener noreferrer">andrew-s-group.com</a>, which is a separate company with its own privacy policy governing client engagements.</p>
+  </section>
+
+  <section id="data-collected">
+    <h2><span class="num">02</span> What data is collected</h2>
+    <p>The Site is designed to collect the minimum data needed to respond to you. Depending on how you interact with it:</p>
+    <div class="data-table">
+      <div class="data-row head"><span>Feature</span><span>Data collected</span><span>Why</span></div>
+      <div class="data-row"><span>Contact links (email / phone)</span><span>Whatever you choose to include in your own message</span><span>To respond to your inquiry</span></div>
+      <div class="data-row"><span>AI chat widget</span><span>Message text, a randomly generated session ID, and message history for that session</span><span>To generate a relevant reply and maintain conversational context</span></div>
+      <div class="data-row"><span>Telegram bots</span><span>Your Telegram messages and public profile info as shared with the bot</span><span>To process your inquiry and route qualified leads</span></div>
+      <div class="data-row"><span>General browsing</span><span>Standard technical data (browser type, approximate location from IP, pages visited)</span><span>Basic site analytics and security</span></div>
+    </div>
+    <p style="margin-top:18px;">No account creation, passwords, or payment details are collected through this Site.</p>
+  </section>
+
+  <section id="how-used">
+    <h2><span class="num">03</span> How data is used</h2>
+    <ul>
+      <li>To respond to messages sent via the contact links, chat widget, or Telegram bots.</li>
+      <li>To generate automated replies in the AI chat assistant based on your message and the ongoing conversation.</li>
+      <li>To improve the reliability of demo automations shown on the Site.</li>
+      <li>To understand, in aggregate, how visitors use the Site.</li>
+    </ul>
+    <p>Chat and bot messages are not used to build an advertising profile of you, and are not sold to third parties.</p>
+  </section>
+
+  <section id="third-party-services">
+    <h2><span class="num">04</span> Third-party services &amp; processors</h2>
+    <p>To provide the automated features on this Site, messages you send are processed by the following categories of third-party infrastructure:</p>
+    <div class="cert-chip">Webhook / automation platform (n8n)</div>
+    <div class="cert-chip">Telegram (for bot-based projects)</div>
+    <div class="cert-chip">CRM / database storage (e.g. Airtable)</div>
+    <div class="cert-chip">Language model providers</div>
+    <p>Each of these processes data under its own terms and security practices. Where a bot is hosted on Telegram, Telegram's own privacy policy also applies to your use of that platform.</p>
+  </section>
+
+  <section id="cookies">
+    <h2><span class="num">05</span> Cookies &amp; local storage</h2>
+    <p>The Site does not use tracking or advertising cookies. The AI chat widget keeps a temporary session identifier in memory for the duration of your visit so it can maintain conversation context; this identifier is not linked to your identity and is not persisted after you close the tab, beyond what is retained by the automation backend as described above.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">06</span> Data retention</h2>
+    <p>Messages sent through the contact form or chat widget are retained only as long as needed to respond to your inquiry and for a reasonable follow-up period afterward. Telegram bot conversations are retained according to the storage used by that specific automation (typically a CRM record for qualified leads), and can be deleted on request.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">07</span> Data sharing &amp; disclosure</h2>
+    <p>Data is not sold. It may be shared only with the third-party service providers listed above, strictly to operate the features you use, or where disclosure is required by law.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">08</span> Your rights</h2>
+    <p>You can request to:</p>
+    <ul>
+      <li>Know what data has been collected about you through the Site's chat or bot features.</li>
+      <li>Request correction or deletion of that data.</li>
+      <li>Opt out of future contact.</li>
+    </ul>
+    <p>To exercise any of these, reach out using the contact details below.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">09</span> Children's privacy</h2>
+    <p>This Site is not directed at children under 13, and it does not knowingly collect personal information from them.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span> Changes to this policy</h2>
+    <p>This policy may be updated as the Site's features change. The "Last updated" date above reflects the most recent revision. Continued use of the Site after an update constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact</h2>
+    <p>For privacy questions or data requests, reach out directly:</p>
+    <div class="contact-box">
+      <p class="mono" style="margin-top:0;"><a href="mailto:joshuaandrew159@gmail.com">joshuaandrew159@gmail.com</a></p>
+      <p class="mono" style="margin-top:8px;"><a href="tel:+2349059508235">+234 905 950 8235</a></p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Andrew Joshua Adole</span>
+    <span><a href="index.html">Back to portfolio</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
